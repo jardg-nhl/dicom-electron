@@ -1,0 +1,19 @@
+{
+  "name": "local-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "sass:watch": "sass style.scss style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "electron": "^33.2.1",
+    "express": "^4.21.1",
+    "sass": "^1.81.1"
+  }
+}

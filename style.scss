@@ -1,0 +1,107 @@
+$primary-color: #3393f4;
+
+html  {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  color: #f2f2f2;
+  background-color: $primary-color;
+  text-align:  center;
+  padding-block: .2rem;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 3px #666666;
+}
+
+.wrapper {
+  display: flex;
+  
+  .sidebar {
+    width: 15rem;
+    padding: .2rem;
+    height: 100vh;
+    border-inline-end: 1px solid $primary-color;
+    background-color: #e6e6e6;
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .content__item {
+    padding: 1rem;
+  }
+}
+
+.sidebar__btn {
+  display: inline-block;
+  font-weight: 400;
+  padding: .5rem 1rem;
+  text-align: start;
+  position: relative;
+  border: 1px solid $primary-color;
+  margin-block: .1rem;
+  outline: none;
+  cursor: pointer;
+  color: $primary-color;
+  background-color: #ffffff;
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: .2rem;
+    background-color: $primary-color;
+    height: 100%;
+  }
+  &--active {
+    color: #ffffff;
+    background-color: $primary-color;
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.select-folder {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1rem;
+  .form-control-container {
+    margin-block-end: 0;
+  }
+}
+
+.form-label {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.form-control {
+  display: inline-block;
+  width: unset;
+}
+
+.form-control-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+#manageFiles {
+  .form-control-container {
+    justify-content: space-between !important;
+  }
+}
+
